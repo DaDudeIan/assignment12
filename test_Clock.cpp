@@ -36,6 +36,15 @@ int main() {
     int x;
     std::cin >> x;
     e.setAlarm(x);
+
+    e.tick(10);
+
+    /*====================================================*/
+    Clock i(10);
+
+    i.setAlarm(5);
+
+    i.tick(10);
     
     return 0;
 }

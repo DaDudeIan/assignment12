@@ -4,8 +4,10 @@
 class Clock {
 private:
     int time;
-    int alarm;
-    bool alarmHasBeenSet;
+    int alarm = 0;
+    bool alarmHasBeenSet = false;
+
+    void checkAndUpdateAlarm();
 
 public:
     int getTime() const;
